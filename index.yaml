@@ -1,0 +1,17 @@
+apiVersion: v1
+entries:
+  cloudanix-container-security:
+  - apiVersion: v2
+    created: "2022-01-20T14:19:08.744934+05:30"
+    dependencies:
+    - name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 1.16.2
+    description: Helm chart to deploy cloudanix container protection services
+    digest: 8c01b8b6cb95b709e40ba2c626350a91f9b84aa0de88f78d15523d87d74bf844
+    name: cloudanix-container-security
+    type: application
+    urls:
+    - cloudanix-container-security-0.1.0.tgz
+    version: 0.1.0
+generated: "2022-01-20T14:19:08.738671+05:30"
