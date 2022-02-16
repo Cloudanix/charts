@@ -2,13 +2,13 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v2
-    created: "2022-02-15T16:21:29.152755-08:00"
+    created: "2022-02-15T21:26:47.695349-08:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
       version: 1.16.2
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
-    digest: 2f276cd07009e8aa5940623f7cc8fdaeb92f0816183b0619e4531eb839e2cead
+    digest: 73151b17b1bdbf5f1d6ced4c5dd710c5d9073b4459e14bf847768c2939a05ae9
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -27,30 +27,4 @@ entries:
     urls:
     - cloudanix-v0.0.1.tgz
     version: v0.0.1
-  - apiVersion: v2
-    created: "2022-02-15T16:21:29.162929-08:00"
-    dependencies:
-    - name: falco
-      repository: https://falcosecurity.github.io/charts
-      version: 1.16.2
-    description: Helm Chart to deploy Container Security Services provided by Cloudanix
-    digest: ba6b3e14d0ba9ca6fbfe2a27f00b4875d9ac88ac6647e813bd32c9757e1a4b4b
-    home: https://www.cloudanix.com/cwpp
-    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
-    keywords:
-    - CWPP
-    - Container Workload Protection
-    - Kubernetes Security
-    - Container Security
-    - Kubernetes Event Monitoring
-    maintainers:
-    - email: purusottam@cloudanix.com
-      name: Purusottam Mupunu
-    name: cloudanix
-    sources:
-    - https://cloudanix.github.io/charts/
-    type: application
-    urls:
-    - cloudanix.tgz
-    version: v0.0.1
-generated: "2022-02-15T16:21:29.140578-08:00"
+generated: "2022-02-15T21:26:47.677156-08:00"
