@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v2
-    created: "2022-01-28T14:26:15.576564+05:30"
+    created: "2022-03-17T17:31:56.115002+05:30"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -25,4 +25,4 @@ entries:
     urls:
     - cloudanix-v0.0.1.tgz
     version: v0.0.1
-generated: "2022-01-28T14:26:15.572826+05:30"
+generated: "2022-03-17T17:31:56.109047+05:30"
