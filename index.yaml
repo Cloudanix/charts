@@ -2,7 +2,33 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v4
-    created: "2024-04-23T11:32:10.911488+05:30"
+    created: "2024-07-11T22:46:21.23014-07:00"
+    dependencies:
+    - name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 4.3.0
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+    digest: 63775a39f65420655b8f990fdbe4048fe418ef4841178b04751ecabe01dc4e38
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-v1.0.7.tgz
+    version: v1.0.7
+  - apiVersion: v4
+    created: "2024-07-11T22:46:21.225382-07:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -28,7 +54,7 @@ entries:
     - cloudanix-v1.0.6.tgz
     version: v1.0.6
   - apiVersion: v4
-    created: "2024-04-23T11:32:10.905059+05:30"
+    created: "2024-07-11T22:46:21.220789-07:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -54,7 +80,7 @@ entries:
     - cloudanix-v1.0.5.tgz
     version: v1.0.5
   - apiVersion: v4
-    created: "2024-04-23T11:32:10.900643+05:30"
+    created: "2024-07-11T22:46:21.21717-07:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -80,7 +106,7 @@ entries:
     - cloudanix-v1.0.4.tgz
     version: v1.0.4
   - apiVersion: v4
-    created: "2024-04-23T11:32:10.894929+05:30"
+    created: "2024-07-11T22:46:21.21312-07:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -106,7 +132,7 @@ entries:
     - cloudanix-v1.0.2.tgz
     version: v1.0.2
   - apiVersion: v4
-    created: "2024-04-23T11:32:10.888402+05:30"
+    created: "2024-07-11T22:46:21.209636-07:00"
     dependencies:
     - name: falco
       repository: https://falcosecurity.github.io/charts
@@ -131,4 +157,4 @@ entries:
     urls:
     - cloudanix-v1.0.1.tgz
     version: v1.0.1
-generated: "2024-04-23T11:32:10.882043+05:30"
+generated: "2024-07-11T22:46:21.205456-07:00"
