@@ -2,7 +2,7 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v2
-    created: "2026-06-30T14:24:20.552429-07:00"
+    created: "2026-06-30T14:27:07.240354-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -14,7 +14,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: b519ebcf01ea90af9f14efa0fce164e1bbeb1f46285d249dda61e0d75f589187
+    digest: be9111a4b45cc77660765719c967962d7da1491f912c2d353ed27fac205df474
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -35,38 +35,4 @@ entries:
     urls:
     - cloudanix-1.0.3.tgz
     version: 1.0.3
-  - apiVersion: v2
-    created: "2026-06-30T14:24:20.537641-07:00"
-    dependencies:
-    - condition: falco.enabled
-      name: falco
-      repository: https://falcosecurity.github.io/charts
-      version: 6.0.0
-    - condition: cilium.enabled
-      name: cilium
-      repository: https://helm.cilium.io/
-      version: 1.18.1
-    description: Helm Chart to deploy Container Security Services provided by Cloudanix
-      (Runtime Threat Detection + Network Monitoring)
-    digest: b729acb58589fbbec99156ff9d7a02b46e03423f2e772fa35de0abf1ebf10c87
-    home: https://www.cloudanix.com/cwpp
-    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
-    keywords:
-    - CWPP
-    - Container Workload Protection
-    - Kubernetes Security
-    - Container Security
-    - Kubernetes Event Monitoring
-    - Network Monitoring
-    - Flow Export
-    maintainers:
-    - email: purusottam@cloudanix.com
-      name: Purusottam Mupunu
-    name: cloudanix
-    sources:
-    - https://cloudanix.github.io/charts/
-    type: application
-    urls:
-    - cloudanix-1.0.2.tgz
-    version: 1.0.2
-generated: "2026-06-30T14:24:20.522549-07:00"
+generated: "2026-06-30T14:27:07.225103-07:00"
