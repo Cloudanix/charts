@@ -2,7 +2,41 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.206592-07:00"
+    created: "2026-10-12T18:29:31.128937-07:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 6.0.0
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io/
+      version: 1.18.1
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+      (Runtime Threat Detection + Network Monitoring)
+    digest: 9e29d3817607fe5c1c5bdd0d5f958f46297ed7315b50826823dd1680a0af9631
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    - Network Monitoring
+    - Flow Export
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-2.1.1.tgz
+    version: 2.1.1
+  - apiVersion: v2
+    created: "2026-10-12T18:29:31.114151-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -36,7 +70,7 @@ entries:
     - cloudanix-2.0.9.tgz
     version: 2.0.9
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.191044-07:00"
+    created: "2026-10-12T18:29:31.098485-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -70,7 +104,7 @@ entries:
     - cloudanix-2.0.8.tgz
     version: 2.0.8
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.175511-07:00"
+    created: "2026-10-12T18:29:31.08291-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -104,7 +138,7 @@ entries:
     - cloudanix-2.0.7.tgz
     version: 2.0.7
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.159951-07:00"
+    created: "2026-10-12T18:29:31.067397-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -138,7 +172,7 @@ entries:
     - cloudanix-2.0.6.tgz
     version: 2.0.6
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.144184-07:00"
+    created: "2026-10-12T18:29:31.052227-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -172,7 +206,7 @@ entries:
     - cloudanix-2.0.5.tgz
     version: 2.0.5
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.12819-07:00"
+    created: "2026-10-12T18:29:31.036555-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -206,7 +240,7 @@ entries:
     - cloudanix-2.0.4.tgz
     version: 2.0.4
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.113139-07:00"
+    created: "2026-10-12T18:29:31.021714-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -240,7 +274,7 @@ entries:
     - cloudanix-2.0.3.tgz
     version: 2.0.3
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.098346-07:00"
+    created: "2026-10-12T18:29:31.007009-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -274,7 +308,7 @@ entries:
     - cloudanix-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.083561-07:00"
+    created: "2026-10-12T18:29:30.991665-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -308,7 +342,7 @@ entries:
     - cloudanix-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.068387-07:00"
+    created: "2026-10-12T18:29:30.977107-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -342,7 +376,7 @@ entries:
     - cloudanix-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.053324-07:00"
+    created: "2026-10-12T18:29:30.962832-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -376,7 +410,7 @@ entries:
     - cloudanix-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.037341-07:00"
+    created: "2026-10-12T18:29:30.947954-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -410,7 +444,7 @@ entries:
     - cloudanix-1.0.5.tgz
     version: 1.0.5
   - apiVersion: v2
-    created: "2026-10-09T09:10:56.020746-07:00"
+    created: "2026-10-12T18:29:30.933247-07:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -443,4 +477,4 @@ entries:
     urls:
     - cloudanix-1.0.4.tgz
     version: 1.0.4
-generated: "2026-10-09T09:10:56.004468-07:00"
+generated: "2026-10-12T18:29:30.917659-07:00"
