@@ -2,7 +2,41 @@ apiVersion: v1
 entries:
   cloudanix:
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.671581-08:00"
+    created: "2026-11-20T22:47:02.855804-08:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 9.2.2
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io/
+      version: 1.18.1
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+      (Runtime Threat Detection + Network Monitoring)
+    digest: 08b6d970ada0259180b44e7dfc3a824fcf84caea7192e84f2df6c847bc2e9516
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    - Network Monitoring
+    - Flow Export
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-2.4.1.tgz
+    version: 2.4.1
+  - apiVersion: v2
+    created: "2026-11-20T22:47:02.84019-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -36,7 +70,7 @@ entries:
     - cloudanix-2.2.0.tgz
     version: 2.2.0
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.65603-08:00"
+    created: "2026-11-20T22:47:02.824317-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -70,7 +104,7 @@ entries:
     - cloudanix-2.1.4.tgz
     version: 2.1.4
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.640358-08:00"
+    created: "2026-11-20T22:47:02.808208-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -104,7 +138,7 @@ entries:
     - cloudanix-2.1.3.tgz
     version: 2.1.3
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.624844-08:00"
+    created: "2026-11-20T22:47:02.79166-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -116,7 +150,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: e66a767cb46de5d26eb7fc380ebb4e9e5791a939263d1f9734a6d5b9c53db216
+    digest: 3b1d3fc94b3bf4fd5665d86d82358258bf14c1fe4727179946d7c077f0e1ac80
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -138,7 +172,7 @@ entries:
     - cloudanix-2.1.2.tgz
     version: 2.1.2
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.609482-08:00"
+    created: "2026-11-20T22:47:02.775983-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -172,7 +206,7 @@ entries:
     - cloudanix-2.1.1.tgz
     version: 2.1.1
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.593361-08:00"
+    created: "2026-11-20T22:47:02.760298-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -206,7 +240,7 @@ entries:
     - cloudanix-2.0.9.tgz
     version: 2.0.9
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.577701-08:00"
+    created: "2026-11-20T22:47:02.744675-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -218,7 +252,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: 4c2f0eeec2bcc9dfff6756c592d1a10255fe4c00896c12d6b90bd8f8897f92ac
+    digest: a12d4c545651b9416bc5fafab0fce5d1f42140c9f719d468cc14f3f4645c1297
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -240,7 +274,7 @@ entries:
     - cloudanix-2.0.8.tgz
     version: 2.0.8
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.562392-08:00"
+    created: "2026-11-20T22:47:02.729879-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -274,7 +308,7 @@ entries:
     - cloudanix-2.0.7.tgz
     version: 2.0.7
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.547209-08:00"
+    created: "2026-11-20T22:47:02.714915-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -286,7 +320,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: 8f31a7f918765cd0a3081ecdc459de5a69c6e385feef131399643a6926e41a9f
+    digest: 08efb1c6278f248a04481b321568452248f4173f05e08d1957ef5b0205d41b40
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -308,7 +342,7 @@ entries:
     - cloudanix-2.0.6.tgz
     version: 2.0.6
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.531939-08:00"
+    created: "2026-11-20T22:47:02.700062-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -320,7 +354,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: c85a85b00fe8c5757015fe1e91d6a149ffea40fef6412461df8de8769e642ad6
+    digest: 57166ffd0337d859914515cc86050961a94005076799e2e95c9776659bf90ac6
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -342,7 +376,7 @@ entries:
     - cloudanix-2.0.5.tgz
     version: 2.0.5
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.517001-08:00"
+    created: "2026-11-20T22:47:02.685074-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -376,7 +410,7 @@ entries:
     - cloudanix-2.0.4.tgz
     version: 2.0.4
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.501817-08:00"
+    created: "2026-11-20T22:47:02.669982-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -410,7 +444,7 @@ entries:
     - cloudanix-2.0.3.tgz
     version: 2.0.3
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.487424-08:00"
+    created: "2026-11-20T22:47:02.654149-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -422,7 +456,7 @@ entries:
       version: 1.18.1
     description: Helm Chart to deploy Container Security Services provided by Cloudanix
       (Runtime Threat Detection + Network Monitoring)
-    digest: 8454f2630ab6609b147d9fe45d79c570a9ffca7bb3a044ae3aaa86cf46370e84
+    digest: ba1dd4d1044e5cc96022d2ab9bbf33773aa89b799182f38fceea42f0e42ad499
     home: https://www.cloudanix.com/cwpp
     icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
     keywords:
@@ -444,7 +478,7 @@ entries:
     - cloudanix-2.0.2.tgz
     version: 2.0.2
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.471986-08:00"
+    created: "2026-11-20T22:47:02.639254-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -478,7 +512,7 @@ entries:
     - cloudanix-2.0.1.tgz
     version: 2.0.1
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.457079-08:00"
+    created: "2026-11-20T22:47:02.624635-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -512,7 +546,7 @@ entries:
     - cloudanix-2.0.0.tgz
     version: 2.0.0
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.44172-08:00"
+    created: "2026-11-20T22:47:02.607878-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -546,7 +580,7 @@ entries:
     - cloudanix-1.1.0.tgz
     version: 1.1.0
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.426794-08:00"
+    created: "2026-11-20T22:47:02.593004-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -580,7 +614,7 @@ entries:
     - cloudanix-1.0.5.tgz
     version: 1.0.5
   - apiVersion: v2
-    created: "2026-11-13T13:42:50.411737-08:00"
+    created: "2026-11-20T22:47:02.578177-08:00"
     dependencies:
     - condition: falco.enabled
       name: falco
@@ -613,4 +647,106 @@ entries:
     urls:
     - cloudanix-1.0.4.tgz
     version: 1.0.4
-generated: "2026-11-13T13:42:50.395565-08:00"
+  - apiVersion: v2
+    created: "2026-11-20T22:47:02.563455-08:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 6.0.0
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io/
+      version: 1.18.1
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+      (Runtime Threat Detection + Network Monitoring)
+    digest: be9111a4b45cc77660765719c967962d7da1491f912c2d353ed27fac205df474
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    - Network Monitoring
+    - Flow Export
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-1.0.3.tgz
+    version: 1.0.3
+  - apiVersion: v2
+    created: "2026-11-20T22:47:02.548031-08:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 6.0.0
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io/
+      version: 1.18.1
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+      (Runtime Threat Detection + Network Monitoring)
+    digest: 965ae6f6a2ecb152000e04d993df98daef5104fe19f0365f379c62a6bb7848fd
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    - Network Monitoring
+    - Flow Export
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-1.0.2.tgz
+    version: 1.0.2
+  - apiVersion: v2
+    created: "2026-11-20T22:47:02.531877-08:00"
+    dependencies:
+    - condition: falco.enabled
+      name: falco
+      repository: https://falcosecurity.github.io/charts
+      version: 6.0.0
+    - condition: cilium.enabled
+      name: cilium
+      repository: https://helm.cilium.io/
+      version: 1.18.1
+    description: Helm Chart to deploy Container Security Services provided by Cloudanix
+      (Runtime Threat Detection + Network Monitoring)
+    digest: ec93a789a48fcdf00dbfd816d02a359754163fb01192ffea97f4372595896519
+    home: https://www.cloudanix.com/cwpp
+    icon: https://storage.googleapis.com/cloudanix-app-assets/logo.png
+    keywords:
+    - CWPP
+    - Container Workload Protection
+    - Kubernetes Security
+    - Container Security
+    - Kubernetes Event Monitoring
+    - Network Monitoring
+    - Flow Export
+    maintainers:
+    - email: purusottam@cloudanix.com
+      name: Purusottam Mupunu
+    name: cloudanix
+    sources:
+    - https://cloudanix.github.io/charts/
+    type: application
+    urls:
+    - cloudanix-1.0.1.tgz
+    version: 1.0.1
+generated: "2026-11-20T22:47:02.513058-08:00"
